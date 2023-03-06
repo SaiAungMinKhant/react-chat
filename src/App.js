@@ -1,6 +1,7 @@
 import {React,Component} from 'react';
 import Signin from './components/SignIn';
 import Navigation from './components/Navigation';
+import Home from './components/Home';
 import './App.css';
 import Register from './components/Register';
 
@@ -30,9 +31,17 @@ class App extends Component {
       <div className='App'>
         <Navigation isSignIn={isSignIn} onRouteChange={this.onRouteChange} />
         {
-          route === 'signin'
-          ? <Signin />
+          route === 'home'
+          ?<div>
+
+            </div>
+          :(route === 'signin'
+          ?<div>
+            {/* <Home />  */}
+            <Signin />
+            </div>
           : <Register />
+          )
         }
       </div>
     )
