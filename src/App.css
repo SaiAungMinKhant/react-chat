@@ -125,3 +125,21 @@
     border: 1px solid black;
     margin: 1px;
   }
+
+/*MessageBox */
+.chatbox{
+  display: grid;
+  grid-template-columns: auto;
+}
+
+.type{
+  position: fixed;
+  bottom: 0;
+  display: flex;
+  width: auto;
+}
+
+.typemessage{
+  height: 40px;
+  width: 545px;
+}
