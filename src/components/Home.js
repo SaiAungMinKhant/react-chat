@@ -1,10 +1,9 @@
 import React from "react";
-import SideBar from './Sidebar';
 
 function Home () {
     return(
         <div>
-            <SideBar/>
+            <p>Welcome!</p>
         </div>
     )
 }

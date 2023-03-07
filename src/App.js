@@ -33,11 +33,10 @@ class App extends Component {
         {
           route === 'home'
           ?<div>
-
+              <Home /> 
             </div>
           :(route === 'signin'
           ?<div>
-            {/* <Home />  */}
             <Signin />
             </div>
           : <Register />
